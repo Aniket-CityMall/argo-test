@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.name }}-nginx-deployment
+  name: {{ .Values.name }}-nginx-deployment-{{ .Test.age }}
   labels:
-    app: nginx-{{ .test.age }}
+    app: nginx
 spec:
   replicas: 2
   selector:
