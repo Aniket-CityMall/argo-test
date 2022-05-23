@@ -1,3 +1,8 @@
 apiVersion: v2
 name: nginx_app
 version: 1.0.0
+
+dependencies:
+- name: quarkus
+  version: 0.0.3
+  repository: https://redhat-developer.github.io/redhat-helm-charts
